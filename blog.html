@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Blog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+      <section class="main">
+        <div class="header">
+            <a href=""> <img src="/img1.png" alt="" class="logo"></a>
+            <nav class="nav">
+                <ul>
+                    <li> <a class="active" href="website.html">home</a></li>
+                    <li> <a href="shop.html">shop</a></li>
+                    <li> <a href="blog.html">blog</a></li>
+                    <li> <a href="about.html">about</a></li>
+                    <li> <a href="contact.html">contact</a></li>
+                    <li><a href="cart.html"> <i class="fa-solid fa-bag-shopping"></i><a>
+                    <li>
+                        <!-- <i class="ri-menu-line"></i> -->
+                </ul>
+            </nav>
+        </div>
+
+  <div class="container">
+    <header>
+      <h1>My Simple Blog</h1>
+    </header>
+
+    <article class="post">
+      <h2>FASHION BLOG</h2>
+      <p>Welcome to my first blog post! This is a simple blog created using HTML, CSS, and JavaScript.</p>
+    </article>
+
+    <section class="comments-section">
+      <h3>Comments</h3>
+      <ul id="comments-list">
+        <!-- Comments will appear here -->
+      </ul>
+
+      <form id="comment-form">
+        <input type="text" id="comment-input" placeholder="Add a comment..." required />
+        <button type="submit">Post Comment</button>
+      </form>
+    </section>
+  </div>
+
+  <style>
+.main {
+  background-image: linear-gradient(to left, rgb(146, 150, 209), #a3def3ca);
+  background-size: cover;
+  padding-bottom: 0px;
+  overflow: hidden;
+  /* height: 100vh; */
+}
+
+.header {
+  /* position: relative; */
+
+  padding: 20px 40px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  height: 9vh;
+  width: 7vw;
+}
+
+.nav {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav ul li {
+  padding: 0px 30px 0px 30px;
+  display: inline;
+  list-style: none;
+  margin: 10px 20px;
+  position: relative;
+}
+nav ul li a {
+  color: rgb(11, 0, 0);
+  font-size: 1.4vw;
+  text-decoration: none;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: #4744ed;
+  /* text-decoration: underline; */
+  text-transform: bold;
+}
+nav ul li a.active::after,
+nav ul li a:hover::after {
+  content: " ";
+  width: 50%;
+  height: 2px;
+  background-color: #4744ed;
+  position: absolute;
+  bottom: -4px;
+  left: 5px;
+}
+
+
+    body {
+  font-family: Arial, sans-serif;
+ 
+ margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 30px auto;
+  background: #e289e7af;
+  padding: 20px;
+  box-shadow: 0 0 10px #3d3838;
+}
+
+header h1 {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 40px;
+  color: #f3f2f2;
+}
+
+.post h2 {
+  color: #faf9f9;
+}
+
+.comments-section {
+  margin-top: 40px;
+  color: #f3f2f2;
+  font-size: 20px;
+}
+
+#comments-list {
+  list-style:circle;
+  padding: 0;
+  
+}
+
+#comments-list li {
+  background: #eee;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#comment-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  
+}
+
+#comment-input {
+  flex: 1;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+  </style>
+
+  <script src="script.js">
+
+    const form = document.getElementById('comment-form');
+const input = document.getElementById('comment-input');
+const commentList = document.getElementById('comments-list');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const commentText = input.value.trim();
+  if (commentText !== '') {
+    const li = document.createElement('li');
+    li.textContent = commentText;
+    commentList.appendChild(li);
+    input.value = '';
+  }
+});
+
+  </script>
+</body>
+</html>

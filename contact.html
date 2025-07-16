@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <style>
+
+.main {
+  background-image: linear-gradient(to left, rgb(146, 150, 209), #a3def3ca);
+  background-size: cover;
+  padding-bottom: 0px;
+  overflow: hidden;
+  /* height: 100vh; */
+}
+
+.header {
+  /* position: relative; */
+
+  padding: 20px 40px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  height: 9vh;
+  width: 7vw;
+}
+
+.nav {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav ul li {
+  padding: 0px 30px 0px 30px;
+  display: inline;
+  list-style: none;
+  margin: 10px 20px;
+  position: relative;
+}
+nav ul li a {
+  color: rgb(11, 0, 0);
+  font-size: 1.4vw;
+  text-decoration: none;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: #4744ed;
+  /* text-decoration: underline; */
+  text-transform: bold;
+}
+nav ul li a.active::after,
+nav ul li a:hover::after {
+  content: " ";
+  width: 50%;
+  height: 2px;
+  background-color: #4744ed;
+  position: absolute;
+  bottom: -4px;
+  left: 5px;
+}
+
+
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #d9cfcf;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .contact-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .contact-form, .contact-info {
+      flex: 1 1 45%;
+      background: #fff;
+      padding: 25px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+      border-radius: 10px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    button {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      padding: 14px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .contact-box {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+      <section class="main">
+        <div class="header">
+            <a href=""> <img src="/img1.png" alt="" class="logo"></a>
+            <nav class="nav">
+                <ul>
+                    <li> <a class="active" href="website.html">home</a></li>
+                    <li> <a href="shop.html">shop</a></li>
+                    <li> <a href="blog.html">blog</a></li>
+                    <li> <a href="about.html">about</a></li>
+                    <li> <a href="contact.html">contact</a></li>
+                    <li><a href="cart.html"> <i class="fa-solid fa-bag-shopping"></i><a>
+                    <li>
+                        <!-- <i class="ri-menu-line"></i> -->
+                </ul>
+            </nav>
+        </div>
+
+<div class="container">
+  <h1>Contact Us</h1>
+
+  <div class="contact-box">
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <form action="mailto:your@email.com" method="post" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="Message" rows="6" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Contact Info and Map -->
+    <div class="contact-info">
+      <h3>Our Address</h3>
+      <p>Arjonda Metro Station.,<br> Faridabad - 121007 </p>
+      <p>Email: info@yourdomain.com</p>
+      <p>Phone: +91-12345-67890</p>
+
+      <!-- Embedded Google Map -->
+      <iframe src="https://www.zudio.com/apps/s/zudio/storelocator/haryana/faridabad/zudio-faridabad-neelam-chowk-z212" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

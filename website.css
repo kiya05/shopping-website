@@ -1,0 +1,320 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.main {
+  background-image: linear-gradient(to left, rgb(146, 150, 209), #a3def3ca);
+  background-size: cover;
+  padding-bottom: 0px;
+  overflow: hidden;
+  /* height: 100vh; */
+}
+
+.header {
+  /* position: relative; */
+
+  padding: 20px 40px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  height: 9vh;
+  width: 7vw;
+}
+
+.nav {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav ul li {
+  padding: 0px 30px 0px 30px;
+  display: inline;
+  list-style: none;
+  margin: 10px 20px;
+  position: relative;
+}
+nav ul li a {
+  color: rgb(11, 0, 0);
+  font-size: 1.4vw;
+  text-decoration: none;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: #4744ed;
+  /* text-decoration: underline; */
+  text-transform: bold;
+}
+nav ul li a.active::after,
+nav ul li a:hover::after {
+  content: " ";
+  width: 50%;
+  height: 2px;
+  background-color: #4744ed;
+  position: absolute;
+  bottom: -4px;
+  left: 5px;
+}
+
+/* 
+.nav i{
+  display: none;
+
+} */
+
+h2 {
+  color: rgb(12, 1, 1);
+  font-size: 7.5vw;
+  text-transform: uppercase;
+}
+h2 span {
+  color: #463c9d;
+}
+h3 {
+  color: rgb(15, 1, 1);
+  font-size: 2.5vw;
+  text-transform: capitalize;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.438);
+  padding: 50px;
+  margin: 20px 90px;
+  height: 70vh;
+  border-radius: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+button {
+  margin: 20px;
+  padding: 15px 15px 15px 20px;
+  color: #f8f2f7;
+  background-color: #463c9d;
+  border-radius: 20px;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #5252a8be;
+  color: rgb(232, 224, 224);
+}
+
+/* brand */
+.brands-logo {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+  padding: 5px;
+  background-color: rgba(255, 255, 0, 0.556);
+}
+.heading {
+  padding: 30px;
+  text-align: center;
+  background-image: url();
+}
+
+.clothes h3 {
+  padding-left: 20px;
+}
+
+.category {
+  display: inline;
+  padding: 20px 10px;
+  box-shadow: 0 0px 16px rgb(108, 108, 107);
+  align-items: center;
+}
+.category a {
+  text-decoration: none;
+}
+.category a:hover {
+  text-decoration: none;
+  color: rgb(96, 30, 195);
+}
+
+.womencollection {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px;`
+}
+
+.menscollection {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.category i {
+  padding-left: 50%;
+}
+
+footer {
+  margin: 40px 10px;
+  padding: 40px;
+  background-color: #463c9d77;
+  color: white;
+  text-align: center;
+}
+
+footer img {
+  height: 9vh;
+  width: 9vw;
+  padding: 20px;
+}
+.bottom-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  transition: 1.5s ease ;
+
+}
+.last-section dd:hover {
+  color: #020219;
+}
+
+footer input {
+  height: 4.5vh;
+  width: 20vw;
+  text-transform: capitalize;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+footer button {
+  color: #f8f2f7;
+  background-color: #463c9d;
+  border-radius: 20px;
+  font-size: 15px;
+  text-transform: capitalize;
+  height: 40%;
+  width: 35%;
+  padding: 5px 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  margin: 2px;
+
+}
+
+/* ------shop file------------------ */
+
+.shop-container {
+  height: 40vh;
+  width: 100%;
+  background-image: url("https://demo2wpopal.b-cdn.net/ekommart/wp-content/uploads/2020/05/h22_banner-3.jpg");
+  background-size: cover;
+}
+.shop-header {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: capitalize0;
+  text-align: center;
+  padding: 7vw;
+}
+
+.shop-header h3 {
+  color: white;
+  font-size: 60px;
+}
+
+.collections {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  padding: 10px;
+ 
+}
+
+.collections .child {
+  text-align: center;
+
+
+}
+
+.child img {
+  height: 350px;
+  border: 1px solid black;
+ 
+ 
+}
+.child button {
+  background-color: rgba(255, 0, 0, 0.755);
+}
+
+/* ------------------------------max wdth 999 */
+
+@media (max-width: 999px) {
+  nav ul li a {
+    display: none;
+  }
+
+  .nav i {
+    display: initial;
+  }
+  .header img {
+    height: 9%;
+    width: 13%;
+  }
+
+  .container {
+    padding: 50px 10px 20px 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  h2 {
+    color: rgb(17, 1, 1);
+    font-size: 8.5vw;
+    text-transform: uppercase;
+  }
+  p {
+    color: rgb(11, 1, 1);
+    font-size: 20px;
+  }
+  .container img {
+    height: 15%;
+    width: 70vw;
+    display: none;
+  }
+  .about {
+    display: block;
+  }
+  button {
+    padding: 10px 10px 10px 10px;
+    background-color: #463c9d;
+    color: #f2eef1;
+    border-radius: 10px;
+    font-size: 1.4vw;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+/* ----------------max width 499 */
+@media (max-width: 499px) {
+  nav ul li a {
+    display: none;
+  }
+
+  .nav i {
+  }
+}
